@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #ab3f94;
+            padding: 20px;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 1500px;
+            margin:  auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 16px;}
+        footer {
+            background-color: #ab3f94;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .productimg{
+            width: 90%; 
+            border-radius: 10px;
+        }
+        .cta-button {
+            padding: 12px 25px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        .newsletter-section {
+            background-color: #f4f4f4;
+            color: rgb(92, 69, 69);
+            padding:auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion World</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'product' %}">Products</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <h2>Welcome to Our Online Store</h2>
+        <p>Find the best deals on Fashion, Watches,Foot wear and accessories.</p>
+    
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+    </div>
+    <section>
+    <div class="product">
+        <img src="https://blog.g3fashion.com/wp-content/uploads/2020/06/Top-Fashion-Trend-blog.jpg">
+    </div>
+</section>
+    <div>
+        <button class="cta-button">Shop Now</button>
+    </div>
+
+    <h2>Subscribe to Our store</h2>
+    <p>Get the latest updates on new products and special offers.</p>
+    <input type="email" placeholder="Enter your email" style="padding: 10px; width: 30%; border-radius: 5px;">
+    <button class="cta-button" style="background-color: #f31d1d; border: none; padding: 12px 25px;">Subscribe</button>
+</section>
+
+    <footer>
+        <p>&copy; 2025 E-commerce Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+

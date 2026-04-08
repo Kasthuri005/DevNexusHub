@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | E-commerce</title>
+    <style>
+        body { 
+            font-family: Arial, 
+            sans-serif; margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+            text-align: center;
+         }
+        header {
+             background-color:#ab3f94; 
+             padding: 20px; 
+             color: white; 
+            }
+        nav ul { 
+            list-style-type: none;
+             padding: 0; 
+            }
+        nav ul li { 
+            display: inline; 
+            margin: 0 15px; 
+        }
+        nav ul li a {
+             text-decoration: none;
+              color: white; 
+              font-weight: bold;
+             }
+        .content {
+             max-width: 1500px; 
+             margin: 20px auto; 
+             padding: 20px; 
+             background: white; 
+             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+             border-radius: 10px; 
+            }
+        .product-list {
+             display: flex; 
+             justify-content: center; 
+             gap: 30px;
+             flex-wrap: wrap; }
+        .product {
+             background: white; 
+             padding: 15px;
+              border-radius: 10px; 
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+               width: 200px; }
+        .productimg { 
+            width: 100%; 
+            border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion World</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'product' %}">Products</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkkcPI0F3cmdnvfjquompQgcT8UasDXZcNjQ&s" alt="Womens wear">
+                <h3>Womens Fashion</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+                
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgnyadG5KKA6DtgGGHKN4ybJIekGPnWgZgw&s" alt="Mens wear">
+                <h3>Mens Fashion</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+                
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRk58YUeHdFUDbQ-UeuXeiRDtwh8qcp2VdmA&s" alt="Kids wear">
+                <h3>Kids Fashion</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+                
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUQVSvGEG6qHz3ZGlVbF7XxshVctcvuCmdQ&s" alt="Winter wear">
+                <h3>Winter wear</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvRnJXlq1MCgIMLu1C3GwdylG3uJzFoi39Q&s" alt="Sarees">
+                <h3>Sarees</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+                
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThDqndzIL150Ub2sZE1Hqcgh8Fip8ljiUr2w&s" alt="Fashion">
+                <h3>Fashion</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90wFUGjjzgvPSI_crRhRvYsinRyVEYSre5g&s" alt="jeans">
+                <h3>Jeans</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSihoeozhl4PCx7VKs9xz9i185GDrvzAt80bA&s" alt="foot wear">
+                <h3>Foot wear</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQoJNHGV40IaoZGJ-r-v5XtuAhJuiGG4w6w&s" alt="watches">
+                <h3>Watches</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWQbTBnPc4SA6nyKabx3Wp_3wPHtlmBlGdkA&s" alt="accessories">
+                <h3>Accessories</h3>
+                <div>
+                    <button style="background-color: #79da3c; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 5px;">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

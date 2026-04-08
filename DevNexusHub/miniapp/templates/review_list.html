@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2><b><i><u>Latest Reviews</u></i></b></h2>
+    <a href="{% url 'review_create' %}" class="btn">Add New Review</a>
+    <ul>
+        {% for review in reviews %}
+            <li>
+                <h1><a href="{% url 'review_list' %}">Tech Reviews & Tutorials</a></h1>
+
+                <a href="{% url 'review_detail' review.pk %}">{{ review.title }}</a>
+                (Rating: {{ review.rating }}/10)
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

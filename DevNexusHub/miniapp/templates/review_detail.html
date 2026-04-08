@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>{{ review.title }}</h2>
+    <p>{{ review.content }}</p>
+    <p>Rating: <strong>{{ review.rating }}/10</strong></p>
+
+   
+    {% if review.video_url %}
+    <h3>Watch Video:</h3>
+    <div class="video-container">
+        <iframe src="{{ review.get_embed_url }}" allowfullscreen></iframe>
+    </div>
+{% endif %}
+
+
+    <form action="{% url 'review_delete' review.pk %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+
+    <a href="{% url 'review_list' %}" class="btn">Back to Reviews</a>
+{% endblock %}

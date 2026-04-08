@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback List</title>
+</head>
+<body>
+    <h2>Feedback List</h2>
+    <form method="get">
+        {{ filter.form.as_p }}
+        <button type="submit">Filter</button>
+    </form>
+    <ul>
+        {% for feedback in filter.qs %}
+            <li>{{ feedback.name }} - Rating: {{ feedback.event_rating }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
